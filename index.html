@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crafty Corner</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <!-- Navbar Section start -->
+    <nav class="container mx-auto relative p-6">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="logo-container">
+          <h1 class="font-bold">Crafty Corner</h1>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden space-x-6 md:flex menu-container">
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Clothing"
+            >&nbsp;Clothing</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;HomeDecor"
+            >&nbsp;HomeDecor</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Accessories"
+            >&nbsp;Accessories</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Toys"
+            >&nbsp;Toys</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;PetProducts"
+            >&nbsp;PetProducts</a
+          >
+        </div>
+        <!-- Membership -->
+        <a
+          href="#"
+          class="hidden bg-black rounded-full px-5 py-2 hover:bg-blushPink text-white md:block"
+          id="member-btn"
+          >Member</a
+        >
+        <!-- Humburger Icon -->
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-atuo sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Clothing"
+            >&nbsp;Clothing</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;HomeDecor"
+            >&nbsp;HomeDecor</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Accessories"
+            >&nbsp;Accessories</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;Toys"
+            >&nbsp;Toys</a
+          >
+          <a href="#" class="hover:text-purple-500" data-set="&nbsp;PetProducts"
+            >&nbsp;PetProducts</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Section end -->
+    <!-- Hero Section start -->
+    <section id="hero">
+      <div
+        class="container mx-auto flex flex-col-reverse items-center px-6 mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!-- Left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-3xl font-bold text-center md:text-left md:text-4xl"
+          >
+            Welcome to our handmade world!
+          </h1>
+          <p class="text-center max-w-sm md:text-left">
+            Each and every item we make is crafted with love and attention to
+            detail, using only the highest quality materials. Browse our
+            collection and discover the perfect piece that speaks to your
+            individuality. We can't wait to share our handmade creations with
+            you!
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="bg-black rounded-full px-5 py-2 text-white"
+              id="browse-btn"
+              >Browse products</a
+            >
+          </div>
+        </div>
+        <!-- Right item -->
+        <div class="md:w-1/2">
+          <img src="src/img/hero.jpg" alt="white yarn beside flowers" />
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+    <!-- Products Section start -->
+    <section id="products">
+      <div class="container mx-auto grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-babyBlue cursor-pointer">
+          <img
+            src="src/img/product1.jpg"
+            alt="sky blue color crochet top"
+            class="rounded-t-full max-h-60 h-full w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+        <div class="bg-red-900 cursor-pointer">
+          <img
+            src="src/img/product2.jpg"
+            alt="crochet flowers"
+            class="rounded-t-full max-h-60 w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+        <div class="bg-orange-400 cursor-pointer">
+          <img
+            src="src/img/product3.jpg"
+            alt="crochet flowers"
+            class="rounded-t-full max-h-60 w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+        <div class="bg-blushPink cursor-pointer">
+          <img
+            src="src/img/product4.jpg"
+            alt="crochet flowers"
+            class="rounded-t-full max-h-60 w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+        <div class="bg-mintGreen cursor-pointer">
+          <img
+            src="src/img/product5.jpg"
+            alt="crochet flowers"
+            class="rounded-t-full max-h-60 w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+        <div class="bg-purple-500 cursor-pointer">
+          <img
+            src="src/img/product6.jpg"
+            alt="crochet flowers"
+            class="rounded-t-full max-h-60 w-full object-cover md:hover:scale-150 md:duration-300"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Products Section end -->
+    <!-- Testimonial Section start -->
+    <section id="testimonial">
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center">Our Customers Say</h2>
+        <!-- Testimonial Container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Testimonial 1 -->
+
+          <div
+            class="flex flex-col items-center p-6 space-y-6 mb-16 rounded-lg bg-lavender md:w-1/3 relative"
+          >
+            <img
+              src="src/img/jennie.jpg"
+              alt="Jennie Kim looking at the camera"
+              class="w-16 h-16 -mt-14 rounded-full object-cover"
+            />
+            <h5 class="text-lg font-bold">Jennie Kim</h5>
+            <p class="text-sm">
+              "I absolutely love the crochet items I received from this website!
+              I ordered a blanket and it's so soft and cozy, it's become my
+              go-to for snuggling up on the couch."
+            </p>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 mb-16 rounded-lg bg-blushPink md:w-1/3"
+          >
+            <img
+              src="src/img/timothee-chalamet.jpg"
+              alt=""
+              class="w-16 h-16 -mt-14 rounded-full object-cover"
+            />
+            <h5 class="text-lg font-bold">Timothée Chalamet</h5>
+            <p class="text-sm">
+              "I was looking for a special gift for my sister's baby shower and
+              stumbled upon this website. I'm so glad I did because I found the
+              most adorable crochet baby booties and hat set. "
+            </p>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 mb-16 rounded-lg bg-babyBlue md:w-1/3"
+          >
+            <img
+              src="src/img/rosee.jpg"
+              alt=""
+              class="w-16 h-16 -mt-14 rounded-full object-cover"
+            />
+            <h5 class="text-lg font-bold">Rosé</h5>
+            <p class="text-sm">
+              "I'm always impressed by the beautiful crochet designs on this
+              website. If you're looking for high-quality, handmade crochet
+              items, look no further!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section end -->
+    <!-- Footer Section start -->
+    <footer class="bg-slate-500">
+      <div
+        class="flex flex-col-reverse justify-between px-6 py-10 space-y-8 mx-auto md:flex-row md:space-y-0 md:space-x-6"
+      >
+        <!-- Logo and social icons -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto text-center my-6 text-white md:hidden">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+          <div>
+            <h1 class="text-purple-500 text-3xl uppercase">
+              <a href="#">Crafty Corner</a>
+            </h1>
+          </div>
+          <div class="flex justify-center space-x-4">
+            <a href="#">
+              <img src="src/img/facebook.png" alt="" class="h-8" />
+            </a>
+            <a href="#">
+              <img src="src/img/instagram.png" alt="" class="h-8" />
+            </a>
+            <a href="#">
+              <img src="src/img/linkedin.png" alt="" class="h-8" />
+            </a>
+            <a href="#">
+              <img src="src/img/twitter.png" alt="" class="h-8" />
+            </a>
+            <a href="#">
+              <img src="src/img/youtube.png" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-center space-x-32">
+          <div class="flex flex-col space-y-3 text-black underline">
+            <a href="#" class="hover:text-purple-500">Home</a>
+            <a href="#" class="hover:text-purple-500">Pricing</a>
+            <a href="#" class="hover:text-purple-500">Products</a>
+            <a href="#" class="hover:text-purple-500">About</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-black underline">
+            <a href="#" class="hover:text-purple-500">Community</a>
+            <a href="#" class="hover:text-purple-500">Become a Member</a>
+            <a href="#" class="hover:text-purple-500">Privacy Policy</a>
+          </div>
+        </div>
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="email"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="Enter your email"
+              />
+              <button
+                class="px-4 py-2 text-white hover:bg-black rounded-full bg-slate-400 focus:outline-none"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2023, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+    <!-- JS link -->
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
